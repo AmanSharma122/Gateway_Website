@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fixed Header with html and css | Collapsing Header Tutorial</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+  <style>
+    .avatar {
+  vertical-align: middle;
+
+  border-radius: 50%;
+}
+    * {
+  box-sizing: border-box;
+}
+    .column1 {
+  float: left;
+  width: 18.33%;
+  padding: 10px;
+
+}
+
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column2 {
+  float: left;
+  width: 24.33%;
+  padding: 5px;
+}
+
+
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    .container12{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container123{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .fixed-footer{
+        width: 100%;
+        position: fixed;
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+
+</style>
+</head>
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="Home.html">Gateway</a>
+				</div>
+				<nav>
+					<a href="Home.html">Home</a> <a href="About.html">About</a> <a href="Services.html">Services</a> <a href="Product.html">Product</a> <a href="Contacts.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<div class="banner-area">
+			<h2>Connect Engage Deleiver</h2>
+		</div>
+		<div class="content-area">
+			<div class="wrapper">
+				<h2>Services</h2>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://miro.medium.com/max/1200/1*pE2fOVDikEUwiQJlh4ggzg.jpeg" alt="Avatar" style="width:100%">
+        <h3>Web Development</h3>
+        <p>Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="https://www.fastmetrics.com/blog/wp-content/uploads/2014/10/cloud-computing-service-types-including-IoT-1024x706.png" alt="Avatar" style="width:100%">
+        <h3>Cloud Services</h3>
+        <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="https://www.digitalorbiscreators.org/data/uploads/services/mobile-app-development.jpg" alt="Avatar" style="width:100%">
+        <h3>App Development</h3>
+        <p>App Development refers to the creation of computer applications for use on mobile devices such as tablets, smartphones and smart watches.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="https://www.smartdatacollective.com/wp-content/uploads/2018/11/top-7-data-analytics-tools-2019.jpg" alt="Avatar" style="width:100%">
+        <h3>Data Science and Analytics</h3>
+
+        <p>Data analytics is the science of analyzing raw data in order to make conclusions about that information.</p>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  <h2>Client Companies</h2>
+  <div class="row1">
+  <div class="column1">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/toyota-202913.png" alt="Snow" style="width:100%" class="avatar">
+  </div>
+  <div class="column1">
+    <img src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1509756700/ul0zjwurhig6q2nlg8io.jpg" alt="Forest" style="width:100%" class="avatar">
+  </div>
+  <div class="column1">
+    <img src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ngit7tdpexvy74m16usp" alt="Mountains" style="width:100%" class="avatar">
+  </div>
+  <div class="column1">
+    <img src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/oik9baohhfgb1lwia7pz" alt="Snow" style="width:100%" class="avatar">
+  </div>
+  <div class="column1">
+    <img src="https://storage.googleapis.com/exenzo-jobboard/carriere-nu/public/thumb/louwman-group-jpeg.jpg" alt="Snow" style="width:100%" class="avatar">
+  </div>
+</div>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<h2>Group Companies</h2>
+<div class="row2">
+  <div class="column2">
+    <img src="https://thegatewaycorp.com/wp-content/uploads/2020/08/gsecure.png" alt="...." style="width:50%; height:70px">
+  </div>
+  <div class="column2">
+    <img src="https://thegatewaycorp.com/wp-content/uploads/2020/08/gateway-digital.png" alt="...." style="width:50%; height:70px">
+  </div>
+  <div class="column2">
+    <img src="https://thegatewaycorp.com/wp-content/uploads/2020/08/tecbridge.png" alt="...." style="width:50%; height:70px">
+  </div>
+  <div class="column2">
+    <img src="https://thegatewaycorp.com/wp-content/uploads/2020/08/autofacets.png" alt="...." style="width:50%; height:70px">
+  </div>
+</div>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+
+			</div>
+
+		</div>
+
+    <div class="fixed-footer">
+        <div class="container12">Copyright &copy; 2020 Gateway Group Of Companies</div>
+        <div class="container123">B/81, Corporate House, Judges Bunglow Rd, Bodakdev, Ahmedabad, Gujarat 380054</div>
+
+	</div>
+
+</body>
+</html>
