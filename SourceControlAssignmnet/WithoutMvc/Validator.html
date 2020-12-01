@@ -1,0 +1,129 @@
+<html>
+<head>
+<style>
+body{
+background-image:url(https://images.unsplash.com/photo-1427847856029-612f5e500306?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+background-repeat:no-repeat;
+background-size:cover;
+}
+.first{
+width:500px;
+margin:auto;
+background:white;
+padding:5px;
+}
+form{
+padding:10px;
+padding:10px;
+font-family:arial;
+margin:10px;
+border-radius:5px;
+}
+h2{
+text-align:center;
+background:green;
+color:white;
+padding:10px;
+border-radius:10px;
+}
+small{
+  padding:10px;
+  padding:10px;
+  font-family:arial;
+  margin:10px;
+  border-radius:5px;
+  color:red;
+
+
+}
+input{
+padding:10px;
+margin:5px;
+border-radius:10px;
+border:none;
+border-color:red;
+}
+input[type=text],input[type=email],input[type=email],input[type=password],input[type=tel],input[type =date]
+{
+width:90%;
+border: 2px solid lightgreen;
+}
+input[type=submit]
+{
+width:90%;
+background:orabnge;
+fonth-size:10px;
+font-weight:bold;
+color:white;
+}h3{
+color:green;
+}
+</style>
+</head>
+<body>
+<div class="first">
+  <form>
+  <h2>Signup form</h2>
+  <h3>First name</h3>
+  <input type="text" value="" name="name" placeholder="First name" required size="45" pattern="[A-Za-z\s]{4,20}" title="Must contain only text not numbers either uppercase or lowercase letter or mixed, and at least 4 or more characters">
+  <br>
+  <small>*Only Add text within the length of 4-20</small>
+  <br>
+
+  <h3>Last name</h3>
+  <input type="text" value="" name="lname" placeholder="Last name" required size="45" pattern="[A-Za-z\s]{4,20}" title="Must contain only text not numbers either uppercase or lowercase letter or mixed, and at least 4 or more characters">  <br>
+
+  <small>*Only Add text within the length of 4-20</small>  <br>
+
+  <h3>Father's name</h3>
+  <input type="text" value="" name="p1name" placeholder="Father's name" required size="45" pattern="[A-Za-z\s]{4,20}" title="Must contain only text not numbers either uppercase or lowercase letter or mixed, and at least 4 or more characters">  <br>
+
+  <small>*Only Add text within the length of 4-20</small>  <br>
+
+  <h3>Mother's name</h3>
+  <input type="text" value="" name="p2name" placeholder="Mother's name" required size="45"pattern="[A-Za-z\s]{4,20}" title="Must contain only text not numbers either uppercase or lowercase letter or mixed, and at least 4 or more characters">  <br>
+
+  <small>*Only Add text within the length of 4-20</small>  <br>
+
+  <h3>Email</h3>
+  <input type="email" value="" name="email" placeholder="Email" required>
+  <h3>Mobile number</h3>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile Number" required> <small>Format: 123-456-7890</small>
+  <form>
+    <h3>Select Gender</h3>
+
+    <label>
+      <input type="radio" name="gender" value="male" required>
+      Male
+    </label><br>
+
+    <label>
+      <input type="radio" name="gender" value="female">
+      Female
+    </label><br>
+
+    <label>
+      <input type="radio" name="gender" value="other">
+      Other
+
+  </form>
+  <h3>Date of Birth</h3>
+  <input type="date" value="" name="date" min="1997-01-01" max="2004-12-31" required>
+  <h3>Password</h3>
+
+  <input type="password" valu="" name="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+  <br>
+  <input type="checkbox" value="" name="chech" required>I Agree to term and conditions
+  <br/>
+  <h3>Department</h3>
+  <select required title="Please select any =one of the fiven Field">
+  <option>HR</option>
+  <option>Mangerial</option>
+  <option>Developer</option>
+  <option>Technical</option>
+  </select>
+  <input type="submit" value="Submit" style="background:red">
+  </form>
+</div>
+</body>
+</html>
